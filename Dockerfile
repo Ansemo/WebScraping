@@ -24,6 +24,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # Dependencias de sistema: Xvfb + libs requeridas por Chromium (playwright install-deps)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     xvfb \
+    xauth \
     # Chromium deps (subset; playwright install-deps agrega el resto)
     ca-certificates \
     fonts-liberation \
